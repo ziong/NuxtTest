@@ -35,9 +35,9 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
 [languages.javascript.languageServer]
 start = "typescript-language-server --stdio"
 
-#[[ports]]
-#localPort = 80
-#externalPort = 443
+[[ports]]
+localPort = 80
+externalPort = 443
 
 [deployment]
 run = ["sh", "-c", "npm run dev"]

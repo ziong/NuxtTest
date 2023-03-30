@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }))
 
 
 router.get('/test', function(req, res) {
-  res.send('Test successful!!!!!')
+  res.json({ msg: ['Test successful!!!!!', 'test2'] })
 })
 
 app.use('/api', router);
